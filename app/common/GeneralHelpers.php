@@ -14,9 +14,9 @@ class GeneralHelpers {
 
 
     public static function EmptyToNull($model) {
-        foreach($model->attributes() as $attribute) {
-            if($model->$attribute === "") {
-                $model->$attribute = NULL;
+        foreach ($model->getAttributes() as $attribute => $value) {
+            if ($value === "") {
+                $model->{$attribute} = NULL;
             }
         }
     }
