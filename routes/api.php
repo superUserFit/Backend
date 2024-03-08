@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+require __DIR__ . '/user_routes/UserRoute.php';
 /*
 |--------------------------------------------------------------------------
 | API Routes
